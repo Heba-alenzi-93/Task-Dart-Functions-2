@@ -29,3 +29,53 @@
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
  */
+
+void main() {
+  printName();
+
+  int myAge = printAge(1993);
+  print(myAge);
+
+  String name = "heba";
+  String lang = "fr";
+  printHello(name, lang);
+
+  printMax(10, -1);
+}
+
+void printName() {
+  print("My name is Heba Alenzi");
+}
+
+int printAge(int birthyear) {
+  int age = 2022 - birthyear;
+
+  return age;
+}
+
+void printHello(String name, String lang) {
+  if (lang == "en") {
+    print("Hello $name");
+  } else if (lang == "es") {
+    print("Holla $name");
+  } else if (lang == "fr") {
+    print("Bonjour $name");
+  } else if (lang == "tr") {
+    print("Marhaba $name");
+  }
+}
+
+/**
+ * Task 4:
+ * Create a function named `printMax`
+ * - that takes 2 parameters as numbers
+ * - should print out the bigger number
+ */
+
+void printMax(int x, int y) {
+  if (x > y) {
+    print(x);
+  } else {
+    print(y);
+  }
+}
